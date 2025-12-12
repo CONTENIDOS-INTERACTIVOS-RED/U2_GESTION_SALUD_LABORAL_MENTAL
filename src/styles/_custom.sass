@@ -17,13 +17,33 @@
 
 .bg-color
   &-1
-    background-color: #EAF8FD
+    background-color: #F9DAD6
   &-2
-    background-color: #FFFBE8
+    background-color: #C4E3DF !important
   &-3
-    background-color: #F0E9F6
+    background-color: #292584 !important
   &-4
-    background-color: #EAF8FD
+    background-color: #FEE9C3
+  &-5
+    background-color: #FCBA3D
+  &-6
+    background-color: #D3D2E6
+  &-7
+    background-color: #FEF7EA
+  &-8
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(189, 188, 217, 1) 30%, rgba(189, 188, 217, 1) 70%, rgba(255, 255, 255, 1) 100%)
+  &-9
+    background-color: #FCEBE9
+  &-10
+    background-color: #F4B6AE
+  &-11
+    background-color: #E8E7F2
+  &-12
+    background-color: #EAF5F4 !important
+  &-13
+    background-color: #BDBCD9
+  &-14
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(196, 227, 223, 1) 30%, rgba(196, 227, 223, 1) 70%, rgba(255, 255, 255, 1) 100%)
   &-info
     background-color: #E8EEFD
   &-sintesis
@@ -97,15 +117,15 @@ $custom-card-img-height: 322px
 
 
 .acordion__header
-  background-color: lighten($color-acento-contenido, 25%) !important
+  background-color: lighten($color-secundario, 55%) !important
 
 .acordion__header--active
-  background-color: $color-acento-contenido !important
+  background-color: $color-secundario !important
   h4, i
     color: #000 !important
 
 .acordion__contenido
-  background-color: lighten($color-acento-contenido, 27%) !important
+  background-color: lighten($color-secundario, 57%) !important
 
 
 .anexo__texto
@@ -201,6 +221,27 @@ $custom-card-img-height: 322px
   .fa-angle-up, .fa-angle-down
     display: block
 
+.large-2
+  .linea-tiempo-d__item__content__title
+    padding: 28px
+    border-radius: 5px 5px 0px 0px
+    background-color: lighten($color-secundario, 50%)
+  .linea-tiempo-d__item__content__title.active
+    background-color: $color-secundario !important
+    color: white
+  .linea-tiempo-d__item__content__slot
+    border-radius: 0px 0px 5px 5px
+    background-color: lighten($color-secundario, 57%) !important
+  .linea-tiempo-d__item__number
+    background-color: lighten($color-secundario, 50%)
+  .linea-tiempo-d__item--selected .linea-tiempo-d__item__number
+    background-color: $color-secundario !important
+    color: white !important
+  .linea-tiempo-d__item__dots:after
+    border-left: 0px
+  .fa-angle-up, .fa-angle-down
+    display: block
+
 .border-top.color-primario
   border-top: 5px solid $color-primario !important
   
@@ -227,3 +268,6 @@ th.bg-color-tabla
 
 .bordes
   border: 1px solid lightgray !important
+
+.bloque-texto-e i 
+  color: #E44B36
