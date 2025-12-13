@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'1. Título tema'")
+  BannerInterno(:subTitulo="'1. Medicina Preventiva y del Trabajo en Colombia'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
     .bg-color-3.mb-5(data-aos="fade-up")
@@ -94,7 +94,7 @@
               .custom-image-card__text.p-4.text-center
                 p.mb-0 Necesidad de incorporar la salud mental en los programas preventivos.
     
-    p.mb-5 Al mismo tiempo, la revolución digital plantea oportunidades emergentes como la telemedicina ocupacional, el uso de wearable devices para monitoreo en tiempo real y la aplicación de big data para anticipar riesgos.
+    p.mb-5 Al mismo tiempo, la revolución digital plantea oportunidades emergentes como la telemedicina ocupacional, el uso de <em>wearable devices</em> para monitoreo en tiempo real y la aplicación de <em>big data</em> para anticipar riesgos.
 
     .bg-color-4.p-4.px-md-5.mb-5
       .row.justify-content-center.align-items-center

@@ -112,7 +112,7 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '4.3',
-            titulo: 'Balanced Scorecard en SST',
+            titulo: '<em>Balanced Scorecard </em> en SST',
             hash: 't_4_3',
           },
         ],

@@ -138,7 +138,7 @@
     p.mb-5 Estas son las acciones más utilizadas para reducir riesgos ambientales en el lugar de trabajo:
 
     .row.align-items-center.mb-5
-      .col-lg-4.order-lg-2
+      .col-lg-4.order-lg-2.mb-3.mb-lg-0
         figure
           img(src="@/assets/curso/tema2/13.png", alt="", data-aos="zoom-in").mb-4.mb-lg-0
       .col-lg-8.order-lg-1
