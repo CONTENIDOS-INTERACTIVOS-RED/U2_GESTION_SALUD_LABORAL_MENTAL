@@ -258,7 +258,7 @@
           .row.align-items-center.p-4.p-md-5
             .col-lg-5.order-2
               figure
-                img(src="@/assets/curso/tema4/13.png")
+                img(src="@/assets/curso/tema4/13-1.png")
             .col-lg-7.order-1.mb-3.mb-lg-0
               h5 Clientes (empleados internos)
               ul.lista-ul--color
@@ -275,7 +275,7 @@
           .row.align-items-center.p-4.p-md-5
             .col-lg-5.order-2
               figure
-                img(src="@/assets/curso/tema4/13.png")
+                img(src="@/assets/curso/tema4/13-2.png")
             .col-lg-7.order-1.mb-3.mb-lg-0
               h5 Procesos Internos
               ul.lista-ul--color
@@ -298,7 +298,7 @@
           .row.align-items-center.p-4.p-md-5
             .col-lg-5.order-2
               figure
-                img(src="@/assets/curso/tema4/13.png")
+                img(src="@/assets/curso/tema4/13-3.png")
             .col-lg-7.order-1.mb-3.mb-lg-0
               h5 Aprendizaje y Crecimiento
               ul.lista-ul--color
