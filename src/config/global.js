@@ -91,33 +91,6 @@ export default {
         ],
       },
       {
-        nombreRuta: 'tema4',
-        icono: 'far fa-file-alt',
-        numero: '4',
-        titulo: 'Herramientas de evaluación',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '4.1',
-            titulo: 'Cuestionarios estandarizados',
-            hash: 't_4_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '4.2',
-            titulo: 'KPI de Salud',
-            hash: 't_4_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '4.3',
-            titulo: '<em>Balanced Scorecard </em> en SST',
-            hash: 't_4_3',
-          },
-        ],
-      },
-      {
         nombreRuta: 'sintesis',
         titulo: 'Síntesis',
         desarrolloContenidos: true,

@@ -223,6 +223,11 @@
           p.mb-0 En última instancia, prevenir es más que una obligación: es proteger lo más valioso de una organización: su gente.
 
 
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
         h2(data-aos="fade-left") MATERIAL COMPLEMENTARIO
@@ -254,8 +259,186 @@
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
-  name: 'Tema3',
+  name: 'Tema4',
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Herramientas colaborativas para la construcción de paz',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál fue la primera ley en Colombia que incorporó un título específico sobre salud ocupacional?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Decreto 1072 de 2015',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Resolución 1016 de 1989',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Ley 9 de 1979',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Resolución 0312 de 2019',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué estrategia preventiva está diseñada específicamente para reducir el riesgo de hipoacusia laboral?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Resolución 2764 de 2022',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'GATISO Ruido',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Decreto 614 de 1984',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Evaluación médica periódica',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              '¿Qué tipo de evaluación médica se realiza al finalizar la relación laboral?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Evaluación de retiro',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto: 'Evaluación periódica',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Evaluación pre-ocupacional',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Evaluación por cambio de ocupación',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Cuál es el objetivo principal del Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST)?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Garantizar la contratación del personal de salud ocupacional',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Aumentar la productividad empresarial',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Prevenir lesiones y enfermedades causadas por condiciones laborales',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Administrar los recursos financieros de las empresas',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿Qué componente NO forma parte de las estrategias ergonómicas comunes en el entorno laboral?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Sillas ajustables',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Higiene postural',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Uso de tapabocas certificados',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Pausas activas',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -264,4 +447,7 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>
